@@ -198,7 +198,7 @@ int main() {
     // m_sort(arr, 0, ARRAY_SIZE);
     // h_sort(arr, 0, ARRAY_SIZE);
     // i_sort(arr, 0, ARRAY_SIZE);
-    // std::sort(arr, arr + ARRAY_SIZE);
+    std::sort(std::begin(arr), std::end(arr));
 
     double timer = static_cast<double>(clock() - start) / CLOCKS_PER_SEC;
     std::cout << "Time taken: " << std::fixed << std::setprecision(6) << timer << std::endl;
